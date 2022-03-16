@@ -8,15 +8,17 @@
 public class test {
 
     public static void main(String[] args) {
-        Komplex a = new Komplex(3.0,2.0);
-        Komplex b = new Komplex(4.0,1.0);
+        Komplex a;
+        Komplex b;
+        a = new Komplex(3.0,2.0);
+        b = new Komplex(4.0,1.0);
 
-        System.out.println("talet borde vara 3 + 2i:\n" + a);
+        System.out.println("talet borde vara 3 + 2i:\n" + a +"\n" + "talet borde vara 4 + 1i:\n" + b);
 
-        Komplex c = a.add(b);
+        /* Komplex c = a.add(b);
         Komplex d = new Komplex(7,3);
 
-        /*System.out.println(c);
+        System.out.println(c);
         if (c.equals(d)) {
             System.out.println("add funkar!!");
         }
