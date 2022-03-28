@@ -32,8 +32,6 @@ public class Komplex {
         return Objects.hash(re, im);
     }
     public Komplex multi (Komplex multi) {
-        multi.re = re * multi.re - im * multi.im;
-        multi.im = im * multi.re + multi.im * re;
-        return multi;
+        return new Komplex(re * multi.re - im * multi.im, im * multi.re + re * multi.im  );
     }
 }
