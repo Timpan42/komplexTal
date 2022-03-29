@@ -34,4 +34,9 @@ public class Komplex {
     public Komplex multi (Komplex multi) {
         return new Komplex(re * multi.re - im * multi.im, im * multi.re + re * multi.im  );
     }
+
+    public double arg (){
+        return Math.atan(im/re);
+    }
 }
+

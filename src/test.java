@@ -30,15 +30,14 @@ public class test {
         c = a.multi(b);
         d = new Komplex(10,11);
 
-        System.out.println("(3*4=12) - (2*1=2) = 10" + "\n" + "(2*4=8) + (3*1=3) = 11" + "\n");
         System.out.println(c);
         if (c.equals(d)) {
             System.out.println("multiply funkar!!");
         }
-/*
+
         System.out.println("Argumentet till 3+2i är " + a.arg());
         if (a.arg() == Math.atan(2.0/3)) {
             System.out.println("arg() funkar!!");
-        }*/
+        }
     }
 }
